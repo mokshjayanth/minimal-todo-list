@@ -27,7 +27,7 @@
                 <thead>
                     <tr style="background-color:#f2d985;">
                         <th>Actions</th>
-                        <!-- <th>Id</th> -->
+                         <th>Id</th> 
                         <th>Description</th>
                         <th>Complete</th>
                         <th>Created Date</th>
@@ -42,7 +42,7 @@
                                     <a class="btn btn-danger" th:href="@{/delete/{id}(id=${item.id})}">Delete</a>
                                 </div>
                             </td>
-                            <!-- <td th:text="${item.id}">item_id</td> -->
+                            <td th:text="${item.id}">item_id</td> 
                             <td th:text="${item.description}">item_description</td>
                             <td th:text="${item.complete}">item_complete</td>
                             <td th:text="${item.createdDate}">item_created_date</td>
