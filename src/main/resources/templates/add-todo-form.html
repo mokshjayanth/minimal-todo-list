@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/3.4.1/css/bootstrap.min.css} " />
+    <style th:inline="text">
+        .background {
+            background: url('/image/minimal-art.jpg') no-repeat center center fixed;
+	        background-size: cover;
+        }        
+    </style>
+    <nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark"></nav>
+        <h1 class="text-center"  style="font-family: Georgia, serif;">Add Your Todo. ヽ(•‿•)ノ</h1>
+    </nav>
+</head>
+
+<body class="background">
+    <div class="container">
+        <hr />
+        <div class="col-md-6">
+            <form action="#" th:action="@{/add-todo}" th:object="${todoItem}" method="POST">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input class="form-control" type="text" th:field="*{description}" id="description"
+                        placeholder="Description">
+                    <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success">Add Todo!</button>
+            </form>
+        </div>
+    </div>
+    <div th:insert="footer :: footer"></div>
+</body>
+
+
+</html>
