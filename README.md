@@ -5,6 +5,8 @@
 
 ### ABOUT PROJECT
 A Minimal To-Do Lists using Java Spring Boot!!
+Do Check out the App! [Minimal Todo.](https://my-minimal-todo-list.herokuapp.com)
+
 
 ### CONCEPTS USED TO BUILD THE PROJECT
 
@@ -18,4 +20,6 @@ A Minimal To-Do Lists using Java Spring Boot!!
 - Create Todo List
 - Update List
 - Delete List
+
+https://my-minimal-todo-list.herokuapp.com
 
